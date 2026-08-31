@@ -1,2 +1,7 @@
-# innergy
-Website (endocrinology)
+# INNERGY
+
+Образовательный сайт о связи инсулинового сигнала, памяти и здоровья мозга.
+
+[Открыть сайт](https://sashkina.github.io/innergy/)
+
+Сайт публикуется из каталога `docs` с помощью GitHub Actions.
