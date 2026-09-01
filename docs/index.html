@@ -5,17 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Что наука знает об инсулинорезистентности мозга, памяти и нормальном уровне сахара в крови."
+      content="Инсулинорезистентность без мифов: риски, диагностика, глюкомонитор, питание и движение по данным исследований и рекомендаций 2026 года."
     />
     <meta name="theme-color" content="#f3f0e8" />
-    <meta property="og:title" content="INNERGY — Сахар в норме. А мозг слышит инсулин?" />
+    <meta property="og:title" content="INNERGY — Когда клетки перестают слышать инсулин" />
     <meta
       property="og:description"
-      content="Разбираем исследования об инсулиновом сигнале в мозге, памяти и деменции — без громких обещаний."
+      content="Большой доказательный гид по инсулинорезистентности: от рисков до реальных способов профилактики."
     />
-    <meta property="og:type" content="article" />
-    <meta property="og:image" content="assets/sugar-brain-hero.webp" />
-    <title>INNERGY — Инсулинорезистентность мозга</title>
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://sashkina.github.io/innergy/assets/innergy-metabolic-hero.webp"
+    />
+    <link rel="canonical" href="https://sashkina.github.io/innergy/" />
+    <title>INNERGY — Инсулинорезистентность без мифов</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,7 +27,7 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Unbounded:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="home.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
@@ -38,51 +42,51 @@
         </span>
       </a>
       <nav aria-label="Навигация по странице">
-        <a href="#mechanism">Как это работает</a>
+        <a href="#risks">Риски</a>
         <a href="#evidence">Исследования</a>
-        <a href="#important">Что важно знать</a>
+        <a href="#diagnostics">Диагностика</a>
+        <a href="#actions">Что делать</a>
       </nav>
-      <a class="issue-pill" href="#sources">Выпуск 01 <span>↘</span></a>
+      <a class="brain-link" href="brain-insulin-resistance.html">
+        Мозг
+        <span aria-hidden="true">↗</span>
+      </a>
     </header>
 
     <main id="content">
-      <section class="hero" aria-labelledby="hero-title">
+      <section class="home-hero" aria-labelledby="hero-title">
         <div class="hero-copy reveal">
           <div class="eyebrow">
             <span class="pulse-dot" aria-hidden="true"></span>
-            Мозг × Метаболизм
+            Базовый гид · обновлено 01.09.2026
           </div>
-          <h1 id="hero-title">
-            Сахар<br />
-            <span>в норме.</span><br />
-            А мозг?
-          </h1>
+          <h1 id="hero-title">Когда клетки <em>перестают слышать</em> инсулин</h1>
           <p class="hero-lead">
-            Анализ крови может выглядеть спокойно, но он не показывает, насколько хорошо клетки
-            мозга отвечают на сигнал инсулина. Разбираемся, что известно науке — и где пока
-            заканчиваются факты.
+            Инсулинорезистентность может долго не менять сахар крови: поджелудочная железа
+            компенсирует слабый ответ тканей, выделяя больше инсулина. Это не диагноз «по внешности»
+            и не личная вина — это изменяемый метаболический риск.
           </p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#evidence">
-              Смотреть исследования
+            <a class="button button-primary" href="#risks">
+              Разобраться за 8 минут
               <span aria-hidden="true">↓</span>
             </a>
-            <p><strong>5 источников</strong><br />рецензируемые публикации</p>
+            <p><strong>12 источников</strong><br />исследования и рекомендации</p>
           </div>
         </div>
 
-        <figure class="hero-visual reveal delay-1">
+        <figure class="hero-image reveal delay-1">
           <img
-            src="assets/sugar-brain-hero.webp"
-            alt="Кубики сахара сложены в форме мозга — визуальная метафора связи обмена веществ и мозга"
+            src="assets/innergy-metabolic-hero.webp"
+            alt="Мужчина и женщина с избыточным весом в светлом городском пространстве"
             width="1536"
             height="1024"
           />
           <figcaption>
-            <span>01</span>
+            <span>Важно</span>
             <p>
-              <strong>Глюкоза ≠ вся картина</strong>
-              Уровень сахара и чувствительность к инсулину — не одно и то же.
+              <strong>Размер тела — не анализ.</strong>
+              Инсулинорезистентность бывает при любом весе, хотя висцеральный жир повышает риск.
             </p>
           </figcaption>
         </figure>
@@ -90,288 +94,525 @@
 
       <div class="ticker" aria-hidden="true">
         <div>
-          <span>ИНСУЛИН — ЭТО СИГНАЛ</span><i>●</i>
-          <span>ПАМЯТЬ ТРЕБУЕТ ЭНЕРГИИ</span><i>●</i>
-          <span>НОРМАЛЬНЫЙ САХАР НЕ ИЗМЕРЯЕТ ОТВЕТ МОЗГА</span><i>●</i>
-          <span>ИНСУЛИН — ЭТО СИГНАЛ</span><i>●</i>
-          <span>ПАМЯТЬ ТРЕБУЕТ ЭНЕРГИИ</span><i>●</i>
-          <span>НОРМАЛЬНЫЙ САХАР НЕ ИЗМЕРЯЕТ ОТВЕТ МОЗГА</span><i>●</i>
+          <span>ГЛЮКОЗА МОЖЕТ БЫТЬ НОРМАЛЬНОЙ</span><i>●</i>
+          <span>РИСК — НЕ ПРИГОВОР</span><i>●</i>
+          <span>МЫШЦЫ ПОМОГАЮТ УТИЛИЗИРОВАТЬ ГЛЮКОЗУ</span><i>●</i>
+          <span>ГЛЮКОЗА МОЖЕТ БЫТЬ НОРМАЛЬНОЙ</span><i>●</i>
+          <span>РИСК — НЕ ПРИГОВОР</span><i>●</i>
+          <span>МЫШЦЫ ПОМОГАЮТ УТИЛИЗИРОВАТЬ ГЛЮКОЗУ</span><i>●</i>
         </div>
       </div>
 
-      <section class="section mechanism" id="mechanism" aria-labelledby="mechanism-title">
-        <div class="section-number reveal">01 / МЕХАНИЗМ</div>
-        <div class="section-heading reveal">
-          <p class="kicker">Не только про сахар</p>
-          <h2 id="mechanism-title">Инсулин помогает мозгу <em>настраивать связь</em></h2>
-          <p class="section-intro">
-            Большая часть глюкозы попадает в мозг без прямого участия инсулина. Но сам инсулин
-            работает там как сигнальная молекула: участвует в пластичности синапсов, обучении,
-            памяти и регуляции аппетита.
-          </p>
+      <section class="section intro" aria-labelledby="intro-title">
+        <div class="section-index reveal">01 / ЧТО ПРОИСХОДИТ</div>
+        <div class="split-heading">
+          <div class="reveal">
+            <p class="kicker">Сигнал есть. Ответ слабее.</p>
+            <h2 id="intro-title">Не «слишком много сахара», а <em>меньше чувствительности</em></h2>
+          </div>
+          <div class="intro-copy reveal delay-1">
+            <p>
+              После еды инсулин помогает мышцам и жировой ткани забирать глюкозу, а печени —
+              регулировать её производство. При резистентности для того же эффекта требуется
+              больше гормона.
+            </p>
+            <p>
+              Сначала компенсация может удерживать глюкозу в обычном диапазоне. Со временем у части
+              людей резерв β-клеток снижается — появляется предиабет, затем диабет 2 типа.
+              <strong>Но этот путь не неизбежен.</strong>
+            </p>
+          </div>
         </div>
 
-        <div class="mechanism-grid">
-          <article class="fact-card reveal">
-            <span class="fact-icon" aria-hidden="true">↗</span>
-            <p class="fact-label">Сигнал</p>
-            <h3>Инсулин связывается с рецептором</h3>
-            <p>Рецепторы есть в гиппокампе и других областях, связанных с обучением и памятью.</p>
+        <div class="signal-flow" aria-label="Этапы развития нарушений обмена">
+          <article class="flow-card reveal">
+            <span>01</span>
+            <p class="flow-tag">Компенсация</p>
+            <h3>Инсулина больше</h3>
+            <p>Глюкоза ещё может оставаться в референсном диапазоне.</p>
+            <div class="flow-meter"><i style="--level: 84%"></i></div>
           </article>
-          <article class="fact-card fact-card-accent reveal delay-1">
-            <span class="fact-icon" aria-hidden="true">⌁</span>
-            <p class="fact-label">Ответ</p>
-            <h3>Клетка запускает внутреннюю цепочку</h3>
-            <p>Сигнальные пути помогают нейронам адаптироваться, образовывать связи и использовать энергию.</p>
+          <article class="flow-card flow-card-blue reveal delay-1">
+            <span>02</span>
+            <p class="flow-tag">Резистентность</p>
+            <h3>Ответ тканей слабее</h3>
+            <p>Печень, мышцы и жировая ткань хуже отвечают на сигнал.</p>
+            <div class="flow-meter"><i style="--level: 48%"></i></div>
           </article>
-          <article class="fact-card reveal delay-2">
-            <span class="fact-icon" aria-hidden="true">×</span>
-            <p class="fact-label">Сопротивление</p>
-            <h3>Сигнал становится тише</h3>
-            <p>При резистентности ответ на инсулин ослабевает, даже если гормон присутствует.</p>
+          <article class="flow-card reveal delay-2">
+            <span>03</span>
+            <p class="flow-tag">Дисгликемия</p>
+            <h3>Сахар растёт</h3>
+            <p>Предиабет или диабет возникают не у всех и не сразу.</p>
+            <div class="flow-meter"><i style="--level: 66%"></i></div>
           </article>
         </div>
       </section>
 
-      <section class="blind-spot" aria-labelledby="blind-title">
-        <div class="blind-copy reveal">
-          <div class="section-number light">02 / СЛЕПАЯ ЗОНА</div>
-          <p class="kicker acid">Главное различие</p>
-          <h2 id="blind-title">Норма в крови<br />не отвечает за мозг</h2>
+      <section class="risk-section" id="risks" aria-labelledby="risks-title">
+        <div class="risk-copy reveal">
+          <div class="section-index light">02 / КАРТА РИСКОВ</div>
+          <p class="kicker acid">Один сигнал — много органов</p>
+          <h2 id="risks-title">Что связано с инсулинорезистентностью</h2>
           <p>
-            Глюкоза натощак показывает концентрацию сахара в крови в конкретный момент.
-            Она не измеряет, как нейроны реагируют на инсулин. Поэтому нормальный показатель
-            <strong>сам по себе не подтверждает и не исключает</strong> нарушения инсулинового
-            сигналинга в мозге.
+            Инсулинорезистентность включена в сеть взаимно усиливающих факторов. Большинство связей
+            двусторонние: например, висцеральный жир ухудшает чувствительность к инсулину,
+            а нарушенный обмен облегчает дальнейший набор веса.
           </p>
         </div>
-        <div class="comparison reveal delay-1" role="img" aria-label="Сравнение анализа крови и ответа мозга">
-          <div class="comparison-row">
-            <div>
-              <span class="status status-ok">ВИДНО</span>
-              <h3>Глюкоза крови</h3>
-              <p>Измеряется обычным анализом</p>
-            </div>
-            <div class="meter"><span style="--value: 72%"></span></div>
-            <strong>норма</strong>
+
+        <div class="risk-map reveal delay-1" role="list" aria-label="Связанные риски">
+          <div class="risk-core" aria-hidden="true">
+            <span>IR</span>
+            <small>инсулино-<br />резистентность</small>
           </div>
-          <div class="comparison-row">
-            <div>
-              <span class="status status-unknown">НЕ ВИДНО</span>
-              <h3>Ответ мозга</h3>
-              <p>Рутинного теста пока нет</p>
-            </div>
-            <div class="meter meter-dashed"><span></span></div>
-            <strong>?</strong>
-          </div>
-          <p class="comparison-note">
-            В исследованиях используют нейровизуализацию, введение инсулина через нос,
-            анализ спинномозговой жидкости и посмертной ткани. Это не скрининговые тесты.
-          </p>
+          <article class="risk-node node-1" role="listitem">
+            <span>01</span>
+            <h3>Диабет 2</h3>
+            <p>Главный метаболический предшественник</p>
+          </article>
+          <article class="risk-node node-2" role="listitem">
+            <span>02</span>
+            <h3>Сосуды</h3>
+            <p>Атерогенная дислипидемия и эндотелиальная дисфункция</p>
+          </article>
+          <article class="risk-node node-3" role="listitem">
+            <span>03</span>
+            <h3>Вес и талия</h3>
+            <p>Особенно важен висцеральный жир</p>
+          </article>
+          <article class="risk-node node-4" role="listitem">
+            <span>04</span>
+            <h3>Печень</h3>
+            <p>Связь с жировой болезнью печени — MASLD</p>
+          </article>
+          <article class="risk-node node-5" role="listitem">
+            <span>05</span>
+            <h3>Мозг</h3>
+            <p>Когнитивные риски исследуются отдельно</p>
+          </article>
+          <article class="risk-node node-6" role="listitem">
+            <span>06</span>
+            <h3>Частый голод*</h3>
+            <p>Возможен, но не является диагностическим признаком</p>
+          </article>
         </div>
       </section>
 
       <section class="section evidence" id="evidence" aria-labelledby="evidence-title">
-        <div class="section-number reveal">03 / ДАННЫЕ</div>
-        <div class="evidence-intro">
-          <div class="section-heading reveal">
-            <p class="kicker">Что увидели учёные</p>
-            <h2 id="evidence-title">Связь есть.<br /><em>Приговора нет.</em></h2>
-            <p class="section-intro">
-              Исследования связывают нарушенный инсулиновый сигналинг с изменением метаболизма
-              мозга, более слабой памятью и патологией болезни Альцгеймера. Но связь не означает,
-              что один фактор неизбежно вызывает другой.
-            </p>
+        <div class="section-index reveal">03 / ЧТО ГОВОРЯТ ДАННЫЕ</div>
+        <div class="evidence-lead">
+          <div class="reveal">
+            <p class="kicker">Наблюдения ≠ судьба</p>
+            <h2 id="evidence-title">Риски измеримы. <em>Причины сложнее.</em></h2>
           </div>
-          <figure class="research-image reveal delay-1">
+          <figure class="lab-image reveal delay-1">
             <img
-              src="assets/researchers-lab.webp"
-              alt="Двое исследователей обсуждают снимки мозга в лаборатории"
-              width="1536"
-              height="1152"
+              src="assets/innergy-metabolic-lab.webp"
+              alt="Трое врачей-исследователей обсуждают лабораторные результаты"
+              width="819"
+              height="546"
               loading="lazy"
             />
-            <figcaption>Часть данных получена на снимках мозга, часть — при анализе тканей.</figcaption>
+            <figcaption>Крупные когорты находят корреляции; интервенционные исследования проверяют причинность.</figcaption>
           </figure>
         </div>
 
-        <div class="study-list">
-          <article class="study reveal">
-            <div class="study-index">A</div>
-            <div>
-              <p class="study-meta">Позиционный обзор · 2023/2024</p>
-              <h3>Инсулинорезистентность мозга встречается и без диабета</h3>
-              <p>
-                Экспертный обзор описывает данные о сниженной реакции мозга на инсулин при старении
-                и болезни Альцгеймера, в том числе у людей без диабета.
-              </p>
-            </div>
-            <a
-              href="https://pubmed.ncbi.nlm.nih.gov/37611907/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Открыть исследование Kellar и Craft на PubMed"
-            >PubMed ↗</a>
+        <div class="evidence-grid">
+          <article class="evidence-card evidence-card-main reveal">
+            <p class="card-meta">NHANES · 14 653 участника · 2001–2018</p>
+            <strong class="data-number">9,7</strong>
+            <span class="data-unit">года наблюдения, медиана</span>
+            <h3>Метаболический индекс ИР был связан со смертностью</h3>
+            <p>
+              При высоких значениях METS-IR росла вероятность общей и сердечно-сосудистой
+              смертности. Зависимость была нелинейной, а исследование — наблюдательным:
+              это маркер риска, не «счётчик оставшихся лет».
+            </p>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/38987779/" target="_blank" rel="noopener noreferrer">
+              Открыть PubMed ↗
+            </a>
           </article>
 
-          <article class="study reveal">
-            <div class="study-index">B</div>
-            <div>
-              <p class="study-meta">Когортное исследование · 150 человек · 2020</p>
-              <h3>Мозговой сигналинг не совпадал со статусом диабета</h3>
-              <p>
-                В посмертной ткани некоторые показатели инсулинового сигналинга были сходны у людей
-                с диабетом и без него; один из маркеров был связан с патологией Альцгеймера и более
-                низкими когнитивными показателями.
-              </p>
-            </div>
-            <a
-              href="https://pubmed.ncbi.nlm.nih.gov/32557841/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Открыть исследование Arvanitakis и коллег на PubMed"
-            >PubMed ↗</a>
+          <article class="evidence-card reveal delay-1">
+            <p class="card-meta">Обзор метаанализов · 2024</p>
+            <strong class="data-number">3,53×</strong>
+            <span class="data-unit">относительный риск диабета 2*</span>
+            <h3>TyG-индекс предсказывал метаболические и сосудистые исходы</h3>
+            <p>
+              Высокий TyG — суррогат ИР — ассоциировался с диабетом 2 типа, MASLD, инсультом,
+              сердечной недостаточностью и деменцией. Качество доказательств различалось по исходам.
+            </p>
+            <a href="https://doi.org/10.1186/s12933-024-02392-y" target="_blank" rel="noopener noreferrer">
+              Открыть обзор ↗
+            </a>
           </article>
 
-          <article class="study reveal">
-            <div class="study-index">C</div>
-            <div>
-              <p class="study-meta">Эксперимент с тканью мозга · 2012</p>
-              <h3>Ослабленный ответ коррелировал с памятью</h3>
-              <p>
-                В ткани гиппокампа людей с болезнью Альцгеймера реакция сигнального пути на инсулин
-                была снижена независимо от наличия диабета, а изменения IRS-1 коррелировали с
-                когнитивным снижением.
-              </p>
-            </div>
-            <a
-              href="https://pubmed.ncbi.nlm.nih.gov/22476197/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Открыть исследование Talbot и коллег на PubMed"
-            >PubMed ↗</a>
+          <article class="evidence-card reveal">
+            <p class="card-meta">Мегакогорты · Lancet · 2024</p>
+            <strong class="data-number">+27%</strong>
+            <span class="data-unit">диабет 2 при высоком GI*</span>
+            <h3>Качество углеводов связано с долгосрочным риском</h3>
+            <p>
+              Высокий гликемический индекс рациона ассоциировался с диабетом 2 типа, сосудистыми
+              заболеваниями и общей смертностью. Богатые клетчаткой и цельнозерновые рационы
+              показывали обратное направление связи.
+            </p>
+            <a href="https://doi.org/10.1016/S2213-8587(23)00344-3" target="_blank" rel="noopener noreferrer">
+              Открыть Lancet ↗
+            </a>
           </article>
 
-          <article class="study reveal">
-            <div class="study-index">D</div>
-            <div>
-              <p class="study-meta">PET/MRI · 79 здоровых взрослых · 2024</p>
-              <h3>Периферическая резистентность связана с рабочей памятью</h3>
-              <p>
-                У здоровых взрослых более высокая системная инсулинорезистентность была связана
-                с более слабой рабочей памятью; у молодых участников — и с более низким
-                метаболизмом глюкозы в ряде областей мозга.
-              </p>
-            </div>
-            <a
-              href="https://doi.org/10.1038/s44324-024-00019-0"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Открыть исследование в npj Metabolic Health and Disease"
-            >DOI ↗</a>
+          <article class="evidence-card evidence-card-acid reveal delay-1">
+            <p class="card-meta">Diabetes Prevention Program · RCT</p>
+            <strong class="data-number">−58%</strong>
+            <span class="data-unit">новых случаев диабета*</span>
+            <h3>Образ жизни действительно меняет траекторию</h3>
+            <p>
+              У людей с высоким риском программа снижения веса примерно на 7% и не менее
+              150 минут активности в неделю снизила заболеваемость диабетом за 2,8 года.
+            </p>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/11832527/" target="_blank" rel="noopener noreferrer">
+              Открыть NEJM ↗
+            </a>
           </article>
         </div>
+        <p class="data-footnote">
+          * Сравнение групп с наиболее высокими и низкими значениями; относительный риск не равен
+          личной вероятности. Корреляции могут частично отражать вес, питание, активность,
+          генетику и другие факторы.
+        </p>
       </section>
 
-      <section class="memory-section" aria-labelledby="memory-title">
-        <figure class="memory-image reveal">
-          <img
-            src="assets/memory-portrait.webp"
-            alt="Задумчивая женщина держит руку у виска, пытаясь что-то вспомнить"
-            width="1024"
-            height="1365"
-            loading="lazy"
-          />
-          <figcaption>«Забываю слова» — неспецифичный симптом с множеством возможных причин.</figcaption>
-        </figure>
-        <div class="memory-copy reveal delay-1">
-          <div class="section-number">04 / ПАМЯТЬ</div>
-          <p class="kicker">Почему это обсуждают</p>
-          <h2 id="memory-title">Гиппокамп особенно важен для новых воспоминаний</h2>
+      <section class="brain-teaser" aria-labelledby="brain-title">
+        <div class="brain-visual reveal" aria-hidden="true">
+          <span class="brain-orbit orbit-1"></span>
+          <span class="brain-orbit orbit-2"></span>
+          <span class="brain-orbit orbit-3"></span>
+          <strong>BRAIN<br />×<br />INSULIN</strong>
+        </div>
+        <div class="brain-copy reveal delay-1">
+          <p class="kicker acid">Локальная история</p>
+          <h2 id="brain-title">А мозг может отвечать на инсулин по-своему?</h2>
           <p>
-            Инсулиновые рецепторы и связанные с ними сигнальные пути представлены в гиппокампе —
-            области, которая помогает формировать и извлекать воспоминания. Нарушение этих путей
-            рассматривают как один из возможных механизмов когнитивного снижения.
+            Да. Инсулинорезистентность мозга изучают как отдельный феномен: нарушения сигнальных
+            путей находят и у людей без диабета. Исследования связывают их с памятью и патологией
+            болезни Альцгеймера, но рутинного диагностического теста пока нет.
           </p>
-          <blockquote>
-            <span>“</span>
-            Это часть сложной картины, а не единственная причина деменции.
-          </blockquote>
-          <p class="small-note">
-            Забывчивость может быть связана со сном, стрессом, депрессией, лекарствами, дефицитами,
-            заболеваниями щитовидной железы и многими другими факторами.
-          </p>
+          <a class="button button-light" href="brain-insulin-resistance.html">
+            Читать отдельный материал
+            <span aria-hidden="true">↗</span>
+          </a>
         </div>
       </section>
 
-      <section class="section takeaways" id="important" aria-labelledby="important-title">
-        <div class="section-number reveal">05 / БЕЗ ХАЙПА</div>
-        <div class="section-heading reveal">
-          <p class="kicker">Что забрать с собой</p>
-          <h2 id="important-title">Три мысли,<br /><em>которые важнее страха</em></h2>
+      <section class="section diagnostics" id="diagnostics" aria-labelledby="diagnostics-title">
+        <div class="section-index reveal">04 / ДИАГНОСТИКА</div>
+        <div class="split-heading">
+          <div class="reveal">
+            <p class="kicker">Не один волшебный анализ</p>
+            <h2 id="diagnostics-title">Собираем <em>метаболический пазл</em></h2>
+          </div>
+          <p class="section-lead reveal delay-1">
+            В обычной практике ищут нарушения гликемии и оценивают общий риск. «Золотой стандарт»
+            чувствительности к инсулину — гиперинсулинемический эугликемический клэмп — сложен и
+            применяется преимущественно в исследованиях.
+          </p>
         </div>
-        <div class="takeaway-grid">
-          <article class="takeaway reveal">
-            <span>01</span>
-            <h3>Норма — не полный ответ</h3>
-            <p>Обычный сахар крови не является тестом на чувствительность мозга к инсулину.</p>
+
+        <div class="test-grid">
+          <article class="test-card reveal">
+            <span class="test-number">01</span>
+            <p class="test-label">Глюкоза натощак</p>
+            <strong>5,6–6,9</strong>
+            <small>ммоль/л · диапазон предиабета ADA</small>
+            <p>Снимок одного момента. Может быть нормальной на ранней стадии компенсации.</p>
           </article>
-          <article class="takeaway reveal delay-1">
-            <span>02</span>
-            <h3>Риск — не судьба</h3>
-            <p>Научная связь с деменцией не означает, что ухудшение памяти неизбежно.</p>
+          <article class="test-card test-card-blue reveal delay-1">
+            <span class="test-number">02</span>
+            <p class="test-label">HbA1c</p>
+            <strong>5,7–6,4%</strong>
+            <small>диапазон предиабета ADA</small>
+            <p>Средняя экспозиция глюкозы за 2–3 месяца; зависит и от состояния эритроцитов.</p>
           </article>
-          <article class="takeaway reveal delay-2">
-            <span>03</span>
-            <h3>Самодиагностика не работает</h3>
-            <p>Для «инсулинорезистентности мозга» пока нет общепринятого рутинного анализа.</p>
+          <article class="test-card reveal delay-2">
+            <span class="test-number">03</span>
+            <p class="test-label">ОГТТ через 2 часа</p>
+            <strong>7,8–11,0</strong>
+            <small>ммоль/л · после 75 г глюкозы</small>
+            <p>Динамический тест может увидеть нарушение, которого не показывает сахар натощак.</p>
           </article>
         </div>
 
-        <aside class="medical-note reveal">
+        <div class="diagnostic-notes">
+          <article class="diagnostic-note reveal">
+            <span>HOMA-IR</span>
+            <div>
+              <h3>Полезная оценка, но не универсальный диагноз</h3>
+              <p>
+                Рассчитывается по глюкозе и инсулину натощак. Результат зависит от метода анализа,
+                возраста, популяции и работы β-клеток — единого международного порога нет.
+              </p>
+            </div>
+          </article>
+          <article class="diagnostic-note reveal delay-1">
+            <span>Контекст</span>
+            <div>
+              <h3>Талия, давление, липиды и печень важны вместе</h3>
+              <p>
+                Врач сопоставляет семейную историю, динамику веса и талии, давление, триглицериды,
+                HDL, глюкозу/HbA1c и при показаниях маркеры состояния печени.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <aside class="medical-alert reveal">
           <div aria-hidden="true">!</div>
           <p>
-            <strong>Если память заметно ухудшается</strong>
-            Обсудите это с врачом: он поможет оценить симптомы и исключить частые обратимые причины.
-            Информация на этой странице не заменяет диагностику и лечение.
+            <strong>Цифры выше — критерии предиабета ADA 2026, а не диагноз инсулинорезистентности.</strong>
+            Результаты лаборатории и решение о дополнительных тестах обсуждают с врачом.
           </p>
         </aside>
       </section>
 
+      <section class="cgm-section" aria-labelledby="cgm-title">
+        <figure class="cgm-image reveal">
+          <img
+            src="assets/innergy-cgm.webp"
+            alt="Датчик непрерывного мониторинга глюкозы на руке и график на смартфоне"
+            width="819"
+            height="546"
+            loading="lazy"
+          />
+          <figcaption>CGM измеряет глюкозу в межклеточной жидкости, а не уровень инсулина.</figcaption>
+        </figure>
+        <div class="cgm-copy reveal delay-1">
+          <div class="section-index">05 / ГЛЮКОМОНИТОР</div>
+          <p class="kicker">Данные в реальной жизни</p>
+          <h2 id="cgm-title">Одинаковая еда.<br /><em>Разные кривые.</em></h2>
+          <p>
+            В PREDICT 1 у 1 002 взрослых ответы глюкозы на одинаковые блюда заметно различались.
+            На них влияли состав и время приёма пищи, сон, активность и индивидуальные особенности.
+          </p>
+          <div class="cgm-facts">
+            <div>
+              <strong>Что может</strong>
+              <p>Показать личные паттерны после еды, движения и сна.</p>
+            </div>
+            <div>
+              <strong>Чего не может</strong>
+              <p>Самостоятельно поставить диагноз ИР или предсказать долголетие.</p>
+            </div>
+          </div>
+          <p class="cgm-caution">
+            Для людей без диабета пока нет общепринятых «норм» интерпретации CGM: в исследовании
+            2025 года согласие экспертов было низким. Один пик не делает продукт «запрещённым» —
+            важны повторяемость, порция, состав всего приёма пищи и клинический контекст.
+          </p>
+          <div class="cgm-links">
+            <a href="https://doi.org/10.1038/s41591-020-0934-0" target="_blank" rel="noopener noreferrer">
+              PREDICT 1 ↗
+            </a>
+            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11822776/" target="_blank" rel="noopener noreferrer">
+              Экспертная интерпретация CGM ↗
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section actions" id="actions" aria-labelledby="actions-title">
+        <div class="section-index reveal">06 / ЧТО РАБОТАЕТ</div>
+        <div class="actions-heading reveal">
+          <p class="kicker">Не идеальность, а повторяемость</p>
+          <h2 id="actions-title">Чувствительность можно <em>поддерживать каждый день</em></h2>
+        </div>
+
+        <article class="action-feature movement">
+          <figure class="action-image reveal">
+            <img
+              src="assets/innergy-nordic-walking.webp"
+              alt="Трое пожилых мужчин занимаются скандинавской ходьбой в парке"
+              width="1536"
+              height="1024"
+              loading="lazy"
+            />
+          </figure>
+          <div class="action-copy reveal delay-1">
+            <span class="action-index">01</span>
+            <p class="kicker">Движение</p>
+            <h3>Мышцы — крупнейший потребитель глюкозы</h3>
+            <p>
+              Аэробная и силовая нагрузка улучшают чувствительность к инсулину. Ориентир —
+              постепенно выйти на 150 минут умеренной активности в неделю и добавить
+              2–3 силовые тренировки в непоследовательные дни.
+            </p>
+            <ul>
+              <li>Ходьба, велосипед, плавание — выбирайте то, что можно продолжать.</li>
+              <li>Прерывайте долгое сидение короткими периодами движения.</li>
+              <li>При заболеваниях сердца и суставов нагрузку согласуйте с врачом.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="action-feature food">
+          <div class="action-copy reveal">
+            <span class="action-index">02</span>
+            <p class="kicker">Питание</p>
+            <h3>Меньше обработки. Больше структуры.</h3>
+            <p>
+              Основа — овощи, бобовые, цельные продукты, орехи, достаточно белка и клетчатки.
+              Ультрапереработанная еда часто сочетает высокую энергетическую плотность,
+              мягкую текстуру и быструю скорость еды.
+            </p>
+            <div class="study-chip">
+              <strong>+508 ккал/день</strong>
+              <p>
+                столько дополнительно съедали участники небольшого стационарного RCT на
+                ультрапереработанном рационе; за 2 недели они набрали в среднем 0,9 кг.
+              </p>
+            </div>
+          </div>
+          <figure class="action-image reveal delay-1">
+            <img
+              src="assets/innergy-ultraprocessed-food.webp"
+              alt="Булочки, чипсы, конфеты и сладкий напиток на ярком столе"
+              width="819"
+              height="546"
+              loading="lazy"
+            />
+            <figcaption>Не отдельная конфета, а устойчивый паттерн питания влияет на риск.</figcaption>
+          </figure>
+        </article>
+
+        <div class="strategy-grid">
+          <article class="strategy reveal">
+            <span>03</span>
+            <h3>Снизить гликемическую нагрузку</h3>
+            <p>
+              Размер порции, клетчатка, белок и жир меняют ответ на углеводы. Цельнозерновые,
+              бобовые и цельные фрукты обычно дают более устойчивый профиль, чем сладкие напитки
+              и очищенные крахмалы.
+            </p>
+          </article>
+          <article class="strategy strategy-blue reveal delay-1">
+            <span>04</span>
+            <h3>Low-carb — вариант, не религия</h3>
+            <p>
+              Умеренное снижение углеводов может улучшать гликемию и HOMA-IR, особенно при диабете
+              и избытке веса. Но долгосрочно нет одного лучшего соотношения для всех: важны качество
+              еды, дефицит энергии при необходимости и соблюдаемость.
+            </p>
+          </article>
+          <article class="strategy reveal delay-2">
+            <span>05</span>
+            <h3>Сон, вес и табак тоже считаются</h3>
+            <p>
+              Регулярный сон, отказ от курения и снижение веса на 5–7% при его избытке входят
+              в современные программы профилактики. Даже небольшие устойчивые изменения полезнее
+              краткого «идеального» режима.
+            </p>
+          </article>
+        </div>
+
+        <aside class="diet-caution reveal">
+          <strong>Очень низкоуглеводный рацион требует медицинского контроля</strong>
+          <p>
+            Особенно при приёме инсулина, сульфонилмочевины или SGLT2-препаратов, а также при
+            беременности, болезнях почек и риске расстройств пищевого поведения.
+          </p>
+        </aside>
+      </section>
+
+      <section class="summary" aria-labelledby="summary-title">
+        <div class="summary-title reveal">
+          <p class="kicker acid">Коротко</p>
+          <h2 id="summary-title">Не охота за «идеальным сахаром».<br />А работа с общим риском.</h2>
+        </div>
+        <div class="summary-list">
+          <article class="reveal">
+            <span>01</span>
+            <h3>ИР часто молчит</h3>
+            <p>Голод и усталость неспецифичны, а нормальная глюкоза не всегда означает нормальную чувствительность.</p>
+          </article>
+          <article class="reveal delay-1">
+            <span>02</span>
+            <h3>Один тест не решает</h3>
+            <p>Диагностика опирается на историю, осмотр и совокупность лабораторных показателей.</p>
+          </article>
+          <article class="reveal delay-2">
+            <span>03</span>
+            <h3>Траектория меняется</h3>
+            <p>Движение, питание, сон и лечение факторов риска реально снижают вероятность диабета.</p>
+          </article>
+        </div>
+      </section>
+
       <section class="sources" id="sources" aria-labelledby="sources-title">
-        <div>
-          <p class="kicker acid">Первоисточники</p>
-          <h2 id="sources-title">Проверить самим</h2>
+        <div class="sources-heading">
+          <p class="kicker acid">Проверить самим</p>
+          <h2 id="sources-title">Источники</h2>
+          <p>Подборка обновлена 1 сентября 2026 года.</p>
         </div>
         <ol>
           <li>
+            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12690183/" target="_blank" rel="noopener noreferrer">
+              ADA. Diagnosis and Classification of Diabetes: Standards of Care in Diabetes—2026.
+            </a>
+          </li>
+          <li>
+            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12690188/" target="_blank" rel="noopener noreferrer">
+              ADA. Facilitating Positive Health Behaviors: Standards of Care in Diabetes—2026.
+            </a>
+          </li>
+          <li>
+            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9542105/" target="_blank" rel="noopener noreferrer">
+              Gastaldelli A. Measuring and estimating insulin resistance in clinical and research settings. 2022.
+            </a>
+          </li>
+          <li>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/38987779/" target="_blank" rel="noopener noreferrer">
+              Cai X. et al. METS-IR predicts all-cause and cardiovascular mortality. 2024.
+            </a>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1186/s12933-024-02392-y" target="_blank" rel="noopener noreferrer">
+              Sánchez-García A. et al. Diagnostic and prognostic value of the TyG index. 2024.
+            </a>
+          </li>
+          <li>
             <a href="https://pubmed.ncbi.nlm.nih.gov/37611907/" target="_blank" rel="noopener noreferrer">
-              Kellar D., Craft S. State of the Science on Brain Insulin Resistance and Cognitive Decline
-              Due to Alzheimer’s Disease. J Prev Alzheimers Dis. 2024.
+              Kellar D., Craft S. Brain insulin resistance and cognitive decline due to Alzheimer’s disease. 2024.
             </a>
           </li>
           <li>
-            <a href="https://pubmed.ncbi.nlm.nih.gov/32557841/" target="_blank" rel="noopener noreferrer">
-              Arvanitakis Z. et al. Brain Insulin Signaling, Alzheimer Disease Pathology, and Cognitive
-              Function. Ann Neurol. 2020.
+            <a href="https://doi.org/10.1038/s41591-020-0934-0" target="_blank" rel="noopener noreferrer">
+              Berry S. et al. Human postprandial responses to food and precision nutrition. Nature Medicine. 2020.
             </a>
           </li>
           <li>
-            <a href="https://pubmed.ncbi.nlm.nih.gov/22476197/" target="_blank" rel="noopener noreferrer">
-              Talbot K. et al. Demonstrated brain insulin resistance in Alzheimer’s disease patients…
-              J Clin Invest. 2012.
+            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11822776/" target="_blank" rel="noopener noreferrer">
+              Spartano N. et al. Expert interpretation of CGM reports from individuals without diabetes. 2025.
             </a>
           </li>
           <li>
-            <a href="https://doi.org/10.1038/s44324-024-00019-0" target="_blank" rel="noopener noreferrer">
-              Zanchi D. et al. Peripheral insulin resistance attenuates cerebral glucose metabolism and
-              impairs working memory in healthy adults. 2024.
+            <a href="https://doi.org/10.1016/j.cmet.2019.05.008" target="_blank" rel="noopener noreferrer">
+              Hall K. et al. Ultra-Processed Diets Cause Excess Calorie Intake and Weight Gain. 2019.
             </a>
           </li>
           <li>
-            <a href="https://doi.org/10.1016/j.jalz.2014.03.011" target="_blank" rel="noopener noreferrer">
-              Willette A. et al. Insulin resistance predicts brain amyloid deposition in late
-              middle-aged adults. Alzheimers Dement. 2015.
+            <a href="https://doi.org/10.1016/j.clnu.2025.09.005" target="_blank" rel="noopener noreferrer">
+              Wang X. et al. Carbohydrate-restricted diets and metabolic health: meta-analysis of 149 RCTs. 2025.
+            </a>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1016/S2213-8587(23)00344-3" target="_blank" rel="noopener noreferrer">
+              Jenkins D. et al. Glycaemic index and chronic disease: mega-cohort meta-analysis. 2024.
+            </a>
+          </li>
+          <li>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/11832527/" target="_blank" rel="noopener noreferrer">
+              Diabetes Prevention Program Research Group. Reduction in the incidence of type 2 diabetes. 2002.
             </a>
           </li>
         </ol>
@@ -385,7 +626,9 @@
       </a>
       <p>Наука без сенсаций.<br />Здоровье без стыда.</p>
       <a class="back-to-top" href="#">Наверх ↑</a>
-      <small>© <span id="year">2026</span> INNERGY · Образовательный материал</small>
+      <small>
+        © <span id="year">2026</span> INNERGY · Образовательный материал, не замена консультации врача
+      </small>
     </footer>
   </body>
 </html>
