@@ -98,6 +98,10 @@ h3 {
   background: rgba(243, 240, 232, 0.92);
 }
 
+.site-header:has(.topic-stack) {
+  min-height: 124px;
+}
+
 .brand {
   display: inline-flex;
   align-items: center;
@@ -167,11 +171,17 @@ nav a:focus-visible::after {
   transform-origin: left;
 }
 
+.topic-stack {
+  display: grid;
+  justify-self: end;
+  justify-items: end;
+  gap: 8px;
+}
+
 .brain-link {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  justify-self: end;
   padding: 8px 8px 8px 13px;
   border: 1px solid var(--ink);
   border-radius: 99px;
@@ -1558,8 +1568,16 @@ footer > small {
     min-height: 76px;
   }
 
+  .site-header:has(.topic-stack) {
+    min-height: 108px;
+  }
+
   .brand small {
     display: none;
+  }
+
+  .topic-stack {
+    gap: 6px;
   }
 
   .brain-link {

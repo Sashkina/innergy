@@ -148,20 +148,24 @@ nav a:focus-visible::after {
 }
 
 .issue-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   justify-self: end;
-  padding: 9px 9px 9px 13px;
+  padding: 8px 8px 8px 13px;
   border: 1px solid var(--ink);
   border-radius: 99px;
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .issue-pill span {
   display: inline-grid;
-  width: 23px;
-  height: 23px;
-  margin-left: 8px;
+  width: 24px;
+  height: 24px;
+  margin-left: 0;
   place-items: center;
   border-radius: 50%;
   background: var(--acid);
