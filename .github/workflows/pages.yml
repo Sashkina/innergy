@@ -1,4 +1,4 @@
-name: Deploy INNERGY to GitHub Pages
+name: Deploy Сахароведение to GitHub Pages
 
 on:
   push:

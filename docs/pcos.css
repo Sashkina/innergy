@@ -140,15 +140,15 @@ h2 em {
 }
 
 .brand strong {
-  font: 600 clamp(16px, 1.5vw, 21px)/1 var(--display);
-  letter-spacing: -0.04em;
+  font: 600 clamp(14px, 1.35vw, 20px)/1.05 var(--display);
+  letter-spacing: -0.05em;
 }
 
 .brand small {
   margin-top: 5px;
   color: var(--muted);
   font-size: 9px;
-  letter-spacing: 0.11em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
