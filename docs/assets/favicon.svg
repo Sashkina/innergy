@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="32" fill="#143cff"/>
+  <rect width="64" height="64" rx="32" fill="#3a5478"/>
   <text
     x="32"
     y="44"
@@ -7,6 +7,6 @@
     font-family="Georgia, 'Times New Roman', serif"
     font-size="36"
     font-weight="700"
-    fill="#d9ff43"
+    fill="#d4c56a"
   >С</text>
 </svg>

@@ -1,12 +1,12 @@
 :root {
-  --paper: #f3f0e8;
-  --paper-deep: #e7e2d6;
+  --paper: #f4f2ed;
+  --paper-deep: #e6e3dc;
   --ink: #141412;
   --muted: #66645d;
-  --blue: #143cff;
-  --blue-dark: #0a2bc7;
-  --acid: #d9ff43;
-  --white: #fffef9;
+  --blue: #3a5478;
+  --blue-dark: #2c425f;
+  --acid: #d4c56a;
+  --white: #fbfaf6;
   --line: rgba(20, 20, 18, 0.18);
   --display: "Unbounded", "Arial Black", sans-serif;
   --body: "Manrope", Arial, sans-serif;
@@ -95,7 +95,7 @@ h3 {
   min-height: 92px;
   padding: 16px clamp(20px, 4vw, 64px);
   border-bottom: 1px solid var(--line);
-  background: rgba(243, 240, 232, 0.92);
+  background: color-mix(in srgb, var(--paper) 92%, transparent);
 }
 
 .site-header:has(.topic-stack) {
@@ -475,16 +475,22 @@ h2 em {
 
 h2 {
   margin-bottom: 0;
-  font-size: clamp(42px, 5vw, 80px);
+  max-width: 100%;
+  font-size: clamp(30px, 4vw, 54px);
   font-weight: 600;
-  line-height: 1.04;
+  line-height: 1.08;
+  overflow-wrap: anywhere;
 }
 
 .split-heading {
   display: grid;
-  grid-template-columns: minmax(0, 1.12fr) minmax(300px, 0.88fr);
-  gap: 7vw;
-  align-items: end;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+  gap: clamp(28px, 4.5vw, 64px);
+  align-items: start;
+}
+
+.split-heading > * {
+  min-width: 0;
 }
 
 .intro-copy {

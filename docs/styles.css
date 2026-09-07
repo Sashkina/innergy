@@ -1,12 +1,12 @@
 :root {
-  --paper: #f3f0e8;
-  --paper-deep: #e7e2d6;
+  --paper: #f4f2ed;
+  --paper-deep: #e6e3dc;
   --ink: #141412;
   --muted: #68665f;
-  --blue: #143cff;
-  --blue-dark: #0a2bc7;
-  --acid: #d9ff43;
-  --white: #fffef9;
+  --blue: #3a5478;
+  --blue-dark: #2c425f;
+  --acid: #d4c56a;
+  --white: #fbfaf6;
   --line: rgba(20, 20, 18, 0.18);
   --radius: 4px;
   --display: "Unbounded", "Arial Black", sans-serif;
@@ -446,9 +446,10 @@ h1 span {
 
 h2 {
   margin-bottom: 0;
-  font-size: clamp(42px, 5.2vw, 82px);
+  font-size: clamp(32px, 4.2vw, 58px);
   font-weight: 600;
-  line-height: 1.03;
+  line-height: 1.08;
+  overflow-wrap: anywhere;
   text-transform: uppercase;
 }
 
