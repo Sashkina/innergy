@@ -712,6 +712,11 @@ h2 {
   line-height: 1.4;
 }
 
+.risk-node p a {
+  color: var(--acid);
+  font-weight: 700;
+}
+
 .node-1 {
   top: 3%;
   left: 35%;
