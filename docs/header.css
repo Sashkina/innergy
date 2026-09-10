@@ -1,0 +1,138 @@
+.site-header {
+  position: relative;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center;
+  column-gap: clamp(12px, 1.8vw, 28px);
+  min-height: 124px;
+  padding: 16px clamp(20px, 4vw, 64px);
+  border-bottom: 1px solid var(--line);
+  background: color-mix(in srgb, var(--paper) 92%, transparent);
+  overflow: visible;
+}
+
+.site-header .brand {
+  justify-self: start;
+  min-width: 0;
+}
+
+.site-header nav {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  justify-self: center;
+  gap: clamp(16px, 2.2vw, 36px);
+  max-width: 100%;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.site-header nav a {
+  position: relative;
+  white-space: nowrap;
+}
+
+.site-header nav a::after {
+  position: absolute;
+  right: 0;
+  bottom: -7px;
+  left: 0;
+  height: 2px;
+  background: var(--blue);
+  content: "";
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 200ms ease;
+}
+
+.site-header nav a:hover::after,
+.site-header nav a:focus-visible::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.site-header .topic-stack {
+  display: grid;
+  grid-template-columns: minmax(6.8rem, auto) minmax(6.8rem, auto);
+  gap: 8px;
+  justify-self: end;
+  align-items: start;
+}
+
+.site-header .topic-pill,
+.site-header .topic-link,
+.site-header .brain-link,
+.site-header .issue-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 8px 8px 13px;
+  border: 1px solid var(--ink);
+  border-radius: 99px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.site-header .topic-pill span,
+.site-header .topic-link span,
+.site-header .brain-link span,
+.site-header .issue-pill span {
+  display: grid;
+  width: 24px;
+  height: 24px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--acid);
+  color: var(--ink);
+  font-size: 13px;
+}
+
+.site-header .topic-brain {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.site-header .topic-muscle {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.site-header .topic-pcos {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+@media (max-width: 1180px) {
+  .site-header {
+    grid-template-columns: minmax(0, 1fr) auto;
+    min-height: 108px;
+  }
+
+  .site-header nav {
+    display: none;
+  }
+}
+
+@media (max-width: 780px) {
+  .site-header {
+    min-height: 92px;
+  }
+
+  .site-header .topic-stack {
+    gap: 6px;
+  }
+
+  .site-header .topic-pill,
+  .site-header .topic-link,
+  .site-header .brain-link,
+  .site-header .issue-pill {
+    border: 0;
+    padding: 0;
+  }
+}
