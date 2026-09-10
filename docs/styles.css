@@ -147,6 +147,19 @@ nav a:focus-visible::after {
   transform-origin: left;
 }
 
+.site-header:has(.topic-stack) {
+  min-height: 124px;
+}
+
+.topic-stack {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 8px;
+  justify-self: end;
+  align-items: start;
+}
+
+.topic-pill,
 .issue-pill {
   display: inline-flex;
   align-items: center;
@@ -159,8 +172,10 @@ nav a:focus-visible::after {
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
+.topic-pill span,
 .issue-pill span {
   display: inline-grid;
   width: 24px;
@@ -170,6 +185,21 @@ nav a:focus-visible::after {
   border-radius: 50%;
   background: var(--acid);
   font-size: 13px;
+}
+
+.topic-brain {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.topic-muscle {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.topic-pcos {
+  grid-column: 1;
+  grid-row: 2;
 }
 
 .hero {
@@ -1053,6 +1083,15 @@ footer > small {
     display: none;
   }
 
+  .site-header:has(.topic-stack) {
+    min-height: 108px;
+  }
+
+  .topic-stack {
+    gap: 6px;
+  }
+
+  .topic-pill,
   .issue-pill {
     border: 0;
     padding: 0;

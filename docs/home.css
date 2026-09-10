@@ -173,11 +173,13 @@ nav a:focus-visible::after {
 
 .topic-stack {
   display: grid;
-  justify-self: end;
-  justify-items: end;
+  grid-template-columns: auto auto;
   gap: 8px;
+  justify-self: end;
+  align-items: start;
 }
 
+.topic-pill,
 .brain-link {
   display: inline-flex;
   align-items: center;
@@ -189,8 +191,10 @@ nav a:focus-visible::after {
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
+.topic-pill span,
 .brain-link span {
   display: grid;
   width: 24px;
@@ -199,6 +203,21 @@ nav a:focus-visible::after {
   border-radius: 50%;
   background: var(--acid);
   font-size: 13px;
+}
+
+.topic-brain {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.topic-muscle {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.topic-pcos {
+  grid-column: 1;
+  grid-row: 2;
 }
 
 .home-hero {
@@ -1586,6 +1605,7 @@ footer > small {
     gap: 6px;
   }
 
+  .topic-pill,
   .brain-link {
     border: 0;
     padding: 0;

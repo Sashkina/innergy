@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Куда мышцы девают глюкозу после еды и почему движение помогает обмену веществ даже без похудения: GLUT4, исследования и спокойные рекомендации."
+    />
+    <meta name="theme-color" content="#f4f2ed" />
+    <meta property="og:title" content="Сахароведение — Мышцы: куда уходит глюкоза после еды" />
+    <meta
+      property="og:description"
+      content="Два пути в клетку: инсулин и сокращение. Почему ходьба после еды работает, а цифра на весах — не единственный критерий."
+    />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:image"
+      content="https://sashkina.github.io/innergy/assets/muscle-hero.webp"
+    />
+    <link rel="canonical" href="https://sashkina.github.io/innergy/muscle-glucose.html" />
+    <title>Сахароведение — Мышцы и глюкоза после еды</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Unbounded:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="muscle.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Перейти к материалу</a>
+
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Сахароведение — на главную">
+        <span class="brand-mark" aria-hidden="true">С</span>
+        <span>
+          <strong>Сахароведение</strong>
+          <small>кафедра обмена веществ</small>
+        </span>
+      </a>
+      <nav aria-label="Навигация по странице">
+        <a href="#mechanism">Механизм</a>
+        <a href="#evidence">Исследования</a>
+        <a href="#avoid">Чего не делать</a>
+        <a href="#actions">Что помогает</a>
+      </nav>
+      <div class="topic-stack" aria-label="Другие материалы">
+        <a class="topic-pill topic-brain" href="brain-insulin-resistance.html">
+          Мозг
+          <span aria-hidden="true">↗</span>
+        </a>
+        <a class="topic-pill topic-pcos" href="pcos-insulin.html">
+          СПКЯ
+          <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </header>
+
+    <main id="content">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy reveal">
+          <div class="eyebrow">
+            <span class="pulse-dot" aria-hidden="true"></span>
+            Мышцы × Метаболизм · обновлено 10.09.2026
+          </div>
+          <h1 id="hero-title">
+            Глюкоза после еды<br />
+            ищет <em>мышцу</em>
+          </h1>
+          <p class="hero-lead">
+            Скелетные мышцы — главный «склад» для глюкозы, когда инсулин открывает им дверь.
+            Сокращение открывает вторую дверь — часто даже тогда, когда первая прикрыта.
+            Поэтому движение меняет кривую сахара, не дожидаясь новой цифры на весах.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#mechanism">
+              Как это устроено
+              <span aria-hidden="true">↓</span>
+            </a>
+            <p><strong>8 источников</strong><br />физиология и рекомендации</p>
+          </div>
+        </div>
+
+        <figure class="hero-image reveal delay-1">
+          <img
+            src="assets/muscle-hero.webp"
+            alt="Двое взрослых разного телосложения спокойно идут по улице"
+            width="1536"
+            height="1152"
+          />
+          <figcaption>
+            <span>Важно</span>
+            <p>
+              <strong>Польза не равна «сжечь ужин».</strong>
+              Мышца забирает глюкозу во время и после нагрузки — это сигнал, а не штраф за еду.
+            </p>
+          </figcaption>
+        </figure>
+      </section>
+
+      <div class="ticker" aria-hidden="true">
+        <div>
+          <span>МЫШЦА — ГЛАВНЫЙ ПОТРЕБИТЕЛЬ ГЛЮКОЗЫ</span><i>●</i>
+          <span>СОКРАЩЕНИЕ ОТКРЫВАЕТ GLUT4 БЕЗ ИНСУЛИНА</span><i>●</i>
+          <span>СИДЕНИЕ ТОЖЕ ЧАСТЬ ОБМЕНА</span><i>●</i>
+          <span>МЫШЦА — ГЛАВНЫЙ ПОТРЕБИТЕЛЬ ГЛЮКОЗЫ</span><i>●</i>
+          <span>СОКРАЩЕНИЕ ОТКРЫВАЕТ GLUT4 БЕЗ ИНСУЛИНА</span><i>●</i>
+          <span>СИДЕНИЕ ТОЖЕ ЧАСТЬ ОБМЕНА</span><i>●</i>
+        </div>
+      </div>
+
+      <section class="section opening" aria-labelledby="opening-title">
+        <div class="section-index reveal">01 / ПОСЛЕ ТАРЕЛКИ</div>
+        <div class="split-heading">
+          <div class="reveal">
+            <p class="kicker">Не «сжечь», а принять</p>
+            <h2 id="opening-title">Большая часть глюкозы уходит <em>в скелетную мышцу</em></h2>
+          </div>
+          <div class="opening-copy reveal delay-1">
+            <p>
+              После углеводной еды инсулин тормозит выход глюкозы из печени и помогает тканям её
+              забрать. При инсулиностимуляции именно скелетные мышцы принимают основную долю
+              глюкозы из крови — не «жиросжигание» в рекламном смысле, а транспорт в клетку.
+            </p>
+            <p>
+              Если мышца отвечает слабо, поджелудочная железа компенсирует большим инсулином.
+              Сахар в анализе ещё может выглядеть спокойно. Движение вмешивается в эту схему
+              отдельно от веса.
+            </p>
+          </div>
+        </div>
+
+        <div class="myth-grid">
+          <article class="myth-card reveal">
+            <span>Миф 01</span>
+            <h3>«Нет минуса на весах — тренировка зря»</h3>
+            <p>
+              Нет. Сокращение забирает глюкозу здесь и сейчас. Вес на весах смешивает воду, гликоген
+              и жир — и запаздывает относительно обмена.
+            </p>
+          </article>
+          <article class="myth-card myth-card-blue reveal delay-1">
+            <span>Миф 02</span>
+            <h3>«Только жёсткое кардио считается»</h3>
+            <p>
+              Нет. Сила, ходьба, подъём по лестнице и короткие паузы в сидении тоже включают
+              мышечный захват глюкозы.
+            </p>
+          </article>
+          <article class="myth-card reveal delay-2">
+            <span>Миф 03</span>
+            <h3>«Один зал в неделю перекрывает шесть дней за столом»</h3>
+            <p>
+              Нет. Эффект последней нагрузки живёт часы, не неделю. Долгое сидение — отдельный риск.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="mechanism" id="mechanism" aria-labelledby="mechanism-title">
+        <div class="mechanism-copy reveal">
+          <div class="section-index light">02 / ДВЕ ДВЕРИ</div>
+          <p class="kicker acid">GLUT4 — транспортёр, а не «жиросжигатель»</p>
+          <h2 id="mechanism-title">Инсулин стучит в одну дверь. Сокращение — в другую.</h2>
+          <p>
+            Глюкоза не проходит через мембрану мышцы сама. Её впускает белок GLUT4, который в покое
+            прячется внутри клетки. Инсулин через Akt и белки TBC1D4/AS160 выдвигает GLUT4 на
+            поверхность. Сокращение делает почти то же через свою сеть: кальций, AMPK, TBC1D1 —
+            без обязательного «разрешения» инсулина.
+          </p>
+        </div>
+
+        <div class="signal-stack reveal delay-1" aria-label="Два пути захвата глюкозы мышцей">
+          <article>
+            <span class="signal-number">01</span>
+            <div>
+              <p class="signal-label">После еды</p>
+              <h3>Дверь инсулина</h3>
+              <p>Сигнал с рецептора → GLUT4 на мембране. При резистентности этот путь тише.</p>
+            </div>
+            <strong>→</strong>
+          </article>
+          <article class="signal-accent">
+            <span class="signal-number">02</span>
+            <div>
+              <p class="signal-label">Во время движения</p>
+              <h3>Дверь сокращения</h3>
+              <p>Этот путь обычно сохраняется, даже когда инсулин слышат хуже.</p>
+            </div>
+            <strong>→</strong>
+          </article>
+          <article>
+            <span class="signal-number">03</span>
+            <div>
+              <p class="signal-label">След нагрузки</p>
+              <h3>Чувствительность на часы</h3>
+              <p>После сессии мышца ещё какое-то время охотнее берёт глюкозу — до суток-двух.</p>
+            </div>
+            <strong>✓</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="scheme-title">
+        <div class="split-heading">
+          <div class="reveal">
+            <p class="kicker">Схема, не магия</p>
+            <h2 id="scheme-title">Пузырьки GLUT4 едут к мембране</h2>
+          </div>
+          <div class="opening-copy reveal delay-1">
+            <p>
+              На рисунке — упрощённое волокно: слева условный сигнал инсулина, справа — сокращения.
+              Оба подталкивают транспортёры к оболочке клетки. Это учебная метафора, не снимок
+              биопсии.
+            </p>
+          </div>
+        </div>
+        <figure class="movement-image reveal" style="margin-top: 48px">
+          <img
+            src="assets/muscle-glut4.webp"
+            alt="Схематичный срез мышечного волокна: два сигнала направляют транспортёры глюкозы к мембране"
+            width="1536"
+            height="1152"
+            loading="lazy"
+          />
+          <figcaption>Инсулин и сокращение сходятся на GLUT4, но идут разными внутриклеточными маршрутами.</figcaption>
+        </figure>
+      </section>
+
+      <section class="section" id="evidence" aria-labelledby="evidence-title">
+        <div class="section-index reveal">03 / ЧТО ГОВОРЯТ ДАННЫЕ</div>
+        <div class="split-heading">
+          <div class="reveal">
+            <p class="kicker">Не один протокол на всех</p>
+            <h2 id="evidence-title">Движение работает. <em>Механизмы разные.</em></h2>
+          </div>
+          <div class="opening-copy reveal delay-1">
+            <p>
+              Острый захват глюкозы при сокращении описан надёжно. Польза «тренированности без
+              минуса на весах» сложнее: часть эффекта — это последняя сессия, часть — состав тела
+              и висцеральный жир, который весы не показывают.
+            </p>
+          </div>
+        </div>
+
+        <div class="myth-grid" style="margin-top: 56px">
+          <article class="myth-card reveal">
+            <span>Физиология · 2024–2025</span>
+            <h3>Мышца — главное депо после еды</h3>
+            <p>
+              Обзоры в <em>Physiological Reviews</em> и по AMPK/TBC1D подтверждают: транспорт через
+              GLUT4 ограничивает захват, а сокращение поднимает GLUT4 независимо от инсулина.
+            </p>
+          </article>
+          <article class="myth-card myth-card-blue reveal delay-1">
+            <span>ADA · 2025</span>
+            <h3>150 минут + сила + паузы в сидении</h3>
+            <p>
+              Стандарты ADA: ≥150 минут умеренной-интенсивной нагрузки в неделю, не больше двух
+              дней подряд без движения, силовые 2–3 раза, сидение прерывать примерно каждые 30 минут.
+            </p>
+          </article>
+          <article class="myth-card reveal delay-2">
+            <span>Клиника</span>
+            <h3>Ходьба после еды и короткие подъёмы</h3>
+            <p>
+              Короткие прогулки после приёма пищи сглаживают постпрандиальную глюкозу. Разбивка
+              долгого сидения ходьбой снижает гликемический ответ без «программы похудения».
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="movement section">
+        <figure class="movement-image reveal">
+          <img
+            src="assets/muscle-sit-break.webp"
+            alt="Человек встаёт из-за светлого письменного стола, прерывая долгое сидение"
+            width="1536"
+            height="1152"
+            loading="lazy"
+          />
+          <figcaption>Даже медленная ходьба между сидениями — это мышечный захват глюкозы, не «лень без зала».</figcaption>
+        </figure>
+        <div class="movement-copy reveal delay-1">
+          <p class="kicker">Честно про вес</p>
+          <h2>Без похудения — да. Без всяких оговорок — нет.</h2>
+          <p>
+            Контролируемые работы Росса и коллег показали: нагрузка при стабильном весе может
+            уменьшить висцеральный жир и улучшить форму. А вот «кламп» чувствительности через
+            несколько дней после последней тренировки без потери жира бывает скромнее, чем хочется
+            в инфографике. Практический вывод спокойный: двигаться регулярно, не ждать весы,
+            не обещать себе «перепрошить метаболизм одним марафоном».
+          </p>
+        </div>
+      </section>
+
+      <section class="endometrium" id="avoid" aria-labelledby="avoid-title">
+        <div class="endometrium-title reveal">
+          <div class="section-index light">04 / ЧЕГО НЕ ДЕЛАТЬ</div>
+          <p class="kicker acid">Не наказание и не спортпит</p>
+          <h2 id="avoid-title">Движение — не моральный долг за еду.</h2>
+        </div>
+        <div class="endometrium-grid">
+          <article class="reveal">
+            <span>Не надо</span>
+            <h3>«Заслужить» ужин истязанием</h3>
+            <p>
+              Компульсивные тренировки и компенсация еды нагрузкой ближе к расстройству пищевого
+              поведения, чем к профилактике. Мышце достаточно регулярности, не вины.
+            </p>
+          </article>
+          <article class="reveal delay-1">
+            <span>Не надо</span>
+            <h3>Верить в точечное жиросжигание</h3>
+            <p>
+              Пресс на полу не открывает GLUT4 только на животе. Глюкозу забирает работающая мышца
+              целиком, а жировые депо регулируются системно.
+            </p>
+          </article>
+          <article class="reveal delay-2">
+            <span>Не надо</span>
+            <h3>Отменять лечение «потому что хожу»</h3>
+            <p>
+              На инсулине и препаратах, которые могут снижать сахар, нагрузку согласуют с врачом:
+              гипогликемия — не признак «хорошей тренировки».
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="actions" aria-labelledby="actions-title">
+        <div class="section-index reveal">05 / ЧТО ПОМОГАЕТ</div>
+        <div class="split-heading">
+          <div class="reveal">
+            <p class="kicker">Повторяемость важнее героизма</p>
+            <h2 id="actions-title">Ориентиры, <em>а не идеальный план</em></h2>
+          </div>
+          <div class="opening-copy reveal delay-1">
+            <p>
+              Ниже — сжатие рекомендаций ADA и ВОЗ, а не персональный рецепт. При болезнях сердца,
+              суставов, беременности и диабете нагрузку подбирают со специалистом.
+            </p>
+          </div>
+        </div>
+
+        <div class="myth-grid four" style="margin-top: 48px">
+          <article class="myth-card reveal">
+            <span>Неделя</span>
+            <h3>Около 150 минут умеренной нагрузки</h3>
+            <p>
+              Быстрая ходьба, велосипед, плавание — то, что можно повторять. Лучше размазать по
+              ≥3 дням, без двух суток полной неподвижности подряд.
+            </p>
+          </article>
+          <article class="myth-card myth-card-blue reveal delay-1">
+            <span>Сила</span>
+            <h3>2–3 сессии в разные дни</h3>
+            <p>
+              Свой вес, гантели, резинки. Больше мышечной массы — больше места для глюкозы в
+              следующие дни, не только «сейчас».
+            </p>
+          </article>
+          <article class="myth-card reveal delay-2">
+            <span>После еды</span>
+            <h3>10–15 минут спокойной ходьбы</h3>
+            <p>
+              Необязательно «жиросжигательная зона». Короткая прогулка часто сильнее бьёт по пику
+              глюкозы, чем героический зал раз в неделю.
+            </p>
+          </article>
+          <article class="myth-card reveal">
+            <span>Сидячий день</span>
+            <h3>Вставать примерно каждые 30 минут</h3>
+            <p>
+              Медленная ходьба или простые приседания у стола. Это отдельно от «набрал 150 минут
+              в субботу».
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="movement section">
+        <figure class="movement-image reveal">
+          <img
+            src="assets/muscle-athletes.webp"
+            alt="Три женщины разного возраста и телосложения выполняют силовые упражнения в светлой студии"
+            width="1536"
+            height="1152"
+            loading="lazy"
+          />
+          <figcaption>Силовая работа нужна не для «идеального тела», а чтобы мышца оставалась складом глюкозы.</figcaption>
+        </figure>
+        <div class="movement-copy reveal delay-1">
+          <p class="kicker">Тело любое</p>
+          <h2>Мышцы есть при любом размере</h2>
+          <ul>
+            <li>Начинать с того, что уже получается: лестница, остановка раньше, вечерний круг.</li>
+            <li>Боль в груди, резкая одышка, отёк сустава — повод остановиться и обратиться к врачу.</li>
+            <li>Сон и еда без войны с собой поддерживают ту же систему, что и тренировка.</li>
+            <li>Успех — регулярность и самочувствие, не только килограммы.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="summary" aria-labelledby="summary-title">
+        <div class="summary-heading reveal">
+          <p class="kicker acid">Коротко</p>
+          <h2 id="summary-title">Мышца слышит движение даже когда инсулин говорит тише.</h2>
+        </div>
+        <div class="summary-list">
+          <article class="reveal">
+            <span>01</span>
+            <h3>Куда уходит глюкоза</h3>
+            <p>После еды её в основном забирает скелетная мышца — если GLUT4 вышел на мембрану.</p>
+          </article>
+          <article class="reveal delay-1">
+            <span>02</span>
+            <h3>Зачем двигаться без похудения</h3>
+            <p>Сокращение открывает второй путь. Плюс короткая «память» чувствительности после сессии.</p>
+          </article>
+          <article class="reveal delay-2">
+            <span>03</span>
+            <h3>Что делать</h3>
+            <p>Немного почти каждый день, сила пару раз в неделю, не сидеть часами без паузы.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="sources" id="sources" aria-labelledby="sources-title">
+        <div class="sources-heading">
+          <p class="kicker acid">Проверить самим</p>
+          <h2 id="sources-title">Источники</h2>
+          <p>Подборка обновлена 10 сентября 2026 года.</p>
+        </div>
+        <ol>
+          <li>
+            <a href="https://doi.org/10.1152/physrev.00033.2024" target="_blank" rel="noopener noreferrer">
+              Richter E.A., Sylow L., Hargreaves M. Muscle glucose uptake: insulin, contraction, exercise.
+              Physiological Reviews. 2025.
+            </a>
+          </li>
+          <li>
+            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10855711/" target="_blank" rel="noopener noreferrer">
+              Peifer-Weiß L., Al-Hasani H., Chadt A. AMPK, RabGAPs and contraction-mediated glucose uptake. Int J Mol Sci. 2024.
+            </a>
+          </li>
+          <li>
+            <a href="https://doi.org/10.2337/dc25-S005" target="_blank" rel="noopener noreferrer">
+              American Diabetes Association. Standards of Care in Diabetes—2025. Section 5: physical activity.
+            </a>
+          </li>
+          <li>
+            <a href="https://www.ncbi.nlm.nih.gov/books/NBK549946/" target="_blank" rel="noopener noreferrer">
+              Zahalka S.J. et al. The Role of Exercise in Diabetes. Endotext.
+            </a>
+          </li>
+          <li>
+            <a href="https://doi.org/10.2337/dc11-1931" target="_blank" rel="noopener noreferrer">
+              Dunstan D.W. et al. Breaking up prolonged sitting reduces postprandial glucose and insulin.
+              Diabetes Care. 2012.
+            </a>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1007/s00125-016-4085-2" target="_blank" rel="noopener noreferrer">
+              Reynolds A.N. et al. Advice to walk after meals is more effective for lowering postprandial glycaemia.
+              Diabetologia. 2016.
+            </a>
+          </li>
+          <li>
+            <a href="https://doi.org/10.7326/0003-4819-133-2-200007180-00008" target="_blank" rel="noopener noreferrer">
+              Ross R. et al. Reduction in obesity and related comorbid conditions after diet-induced weight loss
+              or exercise-induced weight loss, including exercise without weight loss. Ann Intern Med. 2000.
+            </a>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1136/bjsports-2020-102955" target="_blank" rel="noopener noreferrer">
+              Bull F.C. et al. World Health Organization 2020 guidelines on physical activity and sedentary behaviour.
+            </a>
+          </li>
+        </ol>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand brand-footer" href="index.html" aria-label="Сахароведение — на главную">
+        <span class="brand-mark" aria-hidden="true">С</span>
+        <span><strong>Сахароведение</strong><small>кафедра обмена веществ</small></span>
+      </a>
+      <p>Наука без сенсаций.<br />Здоровье без стыда.</p>
+      <a class="back-to-top" href="#">Наверх ↑</a>
+      <small>
+        © <span id="year">2026</span> Сахароведение · Образовательный материал, не замена консультации врача
+      </small>
+    </footer>
+  </body>
+</html>
