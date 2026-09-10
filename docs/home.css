@@ -90,7 +90,7 @@ h3 {
   position: relative;
   z-index: 10;
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: minmax(240px, 1fr) auto minmax(240px, 1fr);
   align-items: center;
   min-height: 92px;
   padding: 16px clamp(20px, 4vw, 64px);
