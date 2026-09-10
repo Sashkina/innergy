@@ -153,7 +153,7 @@ nav a:focus-visible::after {
 
 .topic-stack {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: minmax(7.2rem, auto) minmax(7.2rem, auto);
   gap: 8px;
   justify-self: end;
   align-items: start;

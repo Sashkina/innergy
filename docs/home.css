@@ -173,7 +173,7 @@ nav a:focus-visible::after {
 
 .topic-stack {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: minmax(7.2rem, auto) minmax(7.2rem, auto);
   gap: 8px;
   justify-self: end;
   align-items: start;
@@ -1236,6 +1236,11 @@ h2 {
   max-width: 650px;
   color: var(--muted);
   font-size: 15px;
+}
+
+.action-copy > p a {
+  color: var(--blue);
+  font-weight: 700;
 }
 
 .action-copy ul {
