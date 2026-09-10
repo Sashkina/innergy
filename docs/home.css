@@ -1605,11 +1605,11 @@ footer > small {
 
 @media (max-width: 780px) {
   .site-header {
-    min-height: 76px;
+    min-height: auto;
   }
 
   .site-header:has(.topic-stack) {
-    min-height: 108px;
+    min-height: auto;
   }
 
   .brand small {

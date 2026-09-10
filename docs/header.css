@@ -126,10 +126,18 @@
 
 @media (max-width: 780px) {
   .site-header {
-    min-height: 92px;
+    grid-template-columns: 1fr;
+    min-height: auto;
+    row-gap: 10px;
+    padding-bottom: 14px;
+  }
+
+  .site-header .brand small {
+    display: none;
   }
 
   .site-header .topic-stack {
+    justify-self: start;
     gap: 6px;
   }
 
