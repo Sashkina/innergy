@@ -108,6 +108,11 @@
   grid-row: 2;
 }
 
+.site-header .topic-fat {
+  grid-column: 2;
+  grid-row: 2;
+}
+
 @media (max-width: 1180px) {
   .site-header {
     grid-template-columns: minmax(0, 1fr) auto;

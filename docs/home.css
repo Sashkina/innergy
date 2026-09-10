@@ -220,6 +220,11 @@ nav a:focus-visible::after {
   grid-row: 2;
 }
 
+.topic-fat {
+  grid-column: 2;
+  grid-row: 2;
+}
+
 .home-hero {
   display: grid;
   grid-template-columns: minmax(0, 1.02fr) minmax(0, 0.98fr);
