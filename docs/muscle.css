@@ -514,6 +514,10 @@ h1 em {
   border-width: 1px 0 1px 1px;
 }
 
+.myth-grid.four {
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .myth-card {
   min-height: 320px;
   padding: clamp(27px, 3vw, 44px);
