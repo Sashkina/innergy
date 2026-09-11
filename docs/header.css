@@ -115,6 +115,8 @@
 
 .sources h2 {
   font-size: clamp(42px, 4.8vw, 76px);
+  overflow-wrap: normal;
+  word-break: keep-all;
 }
 
 @media (max-width: 1180px) {
