@@ -77,6 +77,8 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
   white-space: nowrap;
+  grid-column: auto;
+  grid-row: auto;
 }
 
 .site-header .topic-pill span,
@@ -93,24 +95,26 @@
   font-size: 13px;
 }
 
-.site-header .topic-brain {
-  grid-column: 1;
-  grid-row: 1;
+.site-header .topic-home {
+  white-space: normal;
+  max-width: 10.2rem;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  font-size: 8px;
+  text-wrap: balance;
 }
 
-.site-header .topic-muscle {
-  grid-column: 2;
-  grid-row: 1;
+.sources-kicker {
+  margin: 0 0 12px;
+  color: var(--acid);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  text-transform: none;
 }
 
-.site-header .topic-pcos {
-  grid-column: 1;
-  grid-row: 2;
-}
-
-.site-header .topic-fat {
-  grid-column: 2;
-  grid-row: 2;
+.sources h2 {
+  font-size: clamp(42px, 4.8vw, 76px);
 }
 
 @media (max-width: 1180px) {
