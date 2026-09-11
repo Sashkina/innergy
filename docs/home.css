@@ -517,6 +517,13 @@ h2 {
   min-width: 0;
 }
 
+.term-note {
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
 .intro-copy {
   max-width: 650px;
   padding-bottom: 6px;
@@ -1017,15 +1024,15 @@ h2 {
   text-transform: uppercase;
 }
 
-.test-card-blue > small,
-.test-card-blue > p:last-child {
-  color: rgba(255, 255, 255, 0.67);
-}
-
 .test-card > p:last-child {
   margin: 0;
   color: var(--muted);
   font-size: 13px;
+}
+
+.test-card-blue > small,
+.test-card-blue > p:last-child {
+  color: rgba(255, 255, 255, 0.92);
 }
 
 .diagnostic-notes {
@@ -1420,7 +1427,9 @@ h2 {
 }
 
 .sources-heading h2 {
-  font-size: clamp(42px, 4.8vw, 72px);
+  font-size: clamp(42px, 4.8vw, 76px);
+  overflow-wrap: normal;
+  word-break: keep-all;
 }
 
 .sources-heading > p:last-child {
