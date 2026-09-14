@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sashkina.github.io/innergy/sitemap.xml
