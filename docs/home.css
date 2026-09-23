@@ -1565,10 +1565,10 @@ footer > small {
 
 @media (max-width: 1120px) {
   .site-header {
-    grid-template-columns: 1fr auto;
+    grid-template-columns: minmax(0, 1fr) auto;
   }
 
-  nav {
+  .site-header nav {
     display: none;
   }
 
