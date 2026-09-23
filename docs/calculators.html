@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Калькулятор HOMA-IR, TyG и METS-IR по бланку лаборатории и оценка FINDRISC без крови. Ориентир, не диагноз онлайн."
+    />
+    <meta name="theme-color" content="#f4f2ed" />
+    <meta property="og:title" content="Калькулятор HOMA-IR и TyG — Сахароведение" />
+    <meta
+      property="og:description"
+      content="Посчитать суррогаты инсулинорезистентности по анализам или оценить риск диабета 2 типа без бланка. Без постановки диагноза."
+    />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://sashkina.github.io/innergy/calculators.html" />
+    <meta property="og:site_name" content="Сахароведение" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta
+      property="og:image"
+      content="https://sashkina.github.io/innergy/assets/innergy-metabolic-hero.webp"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href="https://sashkina.github.io/innergy/calculators.html" />
+    <title>Калькулятор HOMA-IR и TyG — Сахароведение</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Unbounded:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="calculators.css?v=20260923a" />
+    <link rel="stylesheet" href="header.css?v=20260923a" />
+    <script src="script.js" defer></script>
+    <script src="calculators.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#calculator">Перейти к калькулятору</a>
+
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Сахароведение — на главную">
+        <span class="brand-mark" aria-hidden="true">С</span>
+        <span>
+          <strong>Сахароведение</strong>
+          <small>кафедра обмена веществ</small>
+        </span>
+      </a>
+      <a class="calc-link-mobile" href="calculators.html" aria-current="page">Калькуляторы</a>
+      <nav aria-label="Навигация по странице">
+        <a class="calc-link" href="calculators.html" aria-current="page">Калькуляторы</a>
+        <a href="#calculator">Считать</a>
+        <a href="#next">Что дальше</a>
+        <a href="#sources">Источники</a>
+      </nav>
+      <div class="topic-stack" aria-label="Другие материалы">
+        <a class="topic-pill topic-brain" href="brain-insulin-resistance.html">
+          Мозг
+          <span aria-hidden="true">↗</span>
+        </a>
+        <a class="topic-pill topic-muscle" href="muscle-glucose.html">
+          Мышцы
+          <span aria-hidden="true">↗</span>
+        </a>
+        <a class="topic-pill topic-pcos" href="pcos-insulin.html">
+          СПКЯ
+          <span aria-hidden="true">↗</span>
+        </a>
+        <a class="topic-pill topic-fat" href="adipose-insulin.html">
+          Жир
+          <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </header>
+
+    <main id="content">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <div class="eyebrow">
+            <span class="pulse-dot" aria-hidden="true"></span>
+            Калькуляторы · обновлено 23.09.2026
+          </div>
+          <h1 id="hero-title">Вес стоит. Сахар в бланке <em>нормальный</em>. Голод всё равно есть.</h1>
+          <p class="hero-lead">
+            Инсулинорезистентность может долго не показывать себя глюкозой. Цифра на весах — не анализ
+            и не вина. Ниже — суррогаты по бланку лаборатории и оценка без крови. Это ориентир, не диагноз.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#calculator">Есть анализы — посчитать</a>
+            <a class="button button-ghost" href="#no-labs">Нет бланка — оценка без крови</a>
+          </div>
+        </div>
+        <aside class="hero-aside" aria-label="Важно">
+          <div class="hero-card">
+            <span>Важно</span>
+            <p>
+              <strong>Размер тела не диагноз.</strong> Висцеральный жир повышает риск, а инсулинорезистентность
+              бывает при любом весе.
+            </p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section" id="calculator" aria-labelledby="calc-title">
+        <div class="section-index">01 / СЧИТАТЬ</div>
+        <p class="kicker">Только в браузере</p>
+        <h2 id="calc-title">Бланк лаборатории. <em>Не приговор.</em></h2>
+        <p class="disclaimer">
+          Образовательный инструмент, не медицинская услуга и не диагностика. Решения по анализам и лечению —
+          с врачом. Данные никуда не отправляются.
+        </p>
+
+        <form id="calc-form">
+          <div class="calc-toolbar">
+            <div class="tabs" role="tablist" aria-label="Тип расчёта">
+              <button type="button" role="tab" data-tab="homa" aria-selected="true">HOMA-IR</button>
+              <button type="button" role="tab" data-tab="tyg" aria-selected="false">TyG</button>
+              <button type="button" role="tab" data-tab="mets" aria-selected="false">METS-IR</button>
+              <button type="button" role="tab" data-tab="findrisc" aria-selected="false" id="no-labs">
+                Без анализов
+              </button>
+            </div>
+            <div class="units" aria-label="Единицы глюкозы и липидов">
+              <button type="button" data-units="mmol" aria-pressed="true">ммоль/л</button>
+              <button type="button" data-units="mg" aria-pressed="false">мг/дл</button>
+            </div>
+          </div>
+
+          <div class="calc-layout">
+            <div>
+              <div class="calc-panel" data-panel="homa">
+                <h3>HOMA-IR</h3>
+                <p>
+                  Глюкоза и инсулин натощак. Формула Matthews 1985. Единого международного порога нет: цифра
+                  зависит от метода инсулина, возраста и лаборатории.
+                </p>
+                <div class="fields">
+                  <div class="field">
+                    <label for="insulin">Инсулин натощак, мкЕд/мл</label>
+                    <input id="insulin" name="insulin" type="number" inputmode="decimal" step="0.1" min="0" />
+                  </div>
+                  <div class="field">
+                    <label for="glucose-homa">Глюкоза натощак, <span data-unit-label>ммоль/л</span></label>
+                    <input id="glucose-homa" name="glucose-homa" type="number" inputmode="decimal" step="0.1" min="0" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="calc-panel" data-panel="tyg" hidden>
+                <h3>TyG-индекс</h3>
+                <p>
+                  Триглицериды и глюкоза натощак, без измерения инсулина. В исследованиях высокий TyG
+                  ассоциировали с метаболическим риском — это не личный прогноз.
+                </p>
+                <div class="fields">
+                  <div class="field">
+                    <label for="glucose-tyg">Глюкоза натощак, <span data-unit-label>ммоль/л</span></label>
+                    <input id="glucose-tyg" type="number" inputmode="decimal" step="0.1" min="0" />
+                  </div>
+                  <div class="field">
+                    <label for="tg-tyg">Триглицериды, <span data-unit-label>ммоль/л</span></label>
+                    <input id="tg-tyg" type="number" inputmode="decimal" step="0.01" min="0" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="calc-panel" data-panel="mets" hidden>
+                <h3>METS-IR</h3>
+                <p>
+                  Глюкоза, триглицериды, ЛПВП и ИМТ (Bello-Chavolla, 2018). ИМТ здесь — вход в формулу, не оценка
+                  внешности и не цель «похудеть».
+                </p>
+                <div class="fields">
+                  <div class="field">
+                    <label for="glucose-mets">Глюкоза натощак, <span data-unit-label>ммоль/л</span></label>
+                    <input id="glucose-mets" type="number" inputmode="decimal" step="0.1" min="0" />
+                  </div>
+                  <div class="field">
+                    <label for="tg-mets">Триглицериды, <span data-unit-label>ммоль/л</span></label>
+                    <input id="tg-mets" type="number" inputmode="decimal" step="0.01" min="0" />
+                  </div>
+                  <div class="field">
+                    <label for="hdl-mets">ЛПВП, <span data-unit-label>ммоль/л</span></label>
+                    <input id="hdl-mets" type="number" inputmode="decimal" step="0.01" min="0" />
+                  </div>
+                  <div class="field">
+                    <label for="height-mets">Рост, см</label>
+                    <input id="height-mets" type="number" inputmode="decimal" step="0.1" min="0" />
+                  </div>
+                  <div class="field">
+                    <label for="weight-mets">Вес, кг</label>
+                    <input id="weight-mets" type="number" inputmode="decimal" step="0.1" min="0" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="calc-panel" data-panel="findrisc" hidden>
+                <h3>FINDRISC — без бланка</h3>
+                <p>
+                  Финская шкала риска диабета 2 типа (Lindström, Tuomilehto). Баллы и корзины — про диабет в
+                  перспективе лет, не про «у вас ИР».
+                </p>
+                <div class="fields">
+                  <div class="field">
+                    <label for="age">Возраст, лет</label>
+                    <input id="age" type="number" inputmode="numeric" min="18" max="110" />
+                  </div>
+                  <div class="field field-full">
+                    <p class="legend" id="sex-legend">Пороги талии</p>
+                    <div class="sex-row" role="radiogroup" aria-labelledby="sex-legend">
+                      <label><input type="radio" name="sex" value="female" /> Женский</label>
+                      <label><input type="radio" name="sex" value="male" /> Мужской</label>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label for="height-find">Рост, см</label>
+                    <input id="height-find" type="number" inputmode="decimal" step="0.1" min="0" />
+                  </div>
+                  <div class="field">
+                    <label for="weight-find">Вес, кг</label>
+                    <input id="weight-find" type="number" inputmode="decimal" step="0.1" min="0" />
+                  </div>
+                  <div class="field">
+                    <label for="waist">Окружность талии, см</label>
+                    <input id="waist" type="number" inputmode="decimal" step="0.1" min="0" />
+                  </div>
+                  <div class="field">
+                    <label for="activity">Ежедневная активность ≥ 30 мин</label>
+                    <select id="activity">
+                      <option value="yes">Да</option>
+                      <option value="no">Нет</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label for="veg">Овощи и фрукты каждый день</label>
+                    <select id="veg">
+                      <option value="yes">Да</option>
+                      <option value="no">Нет</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label for="glucose-hx">Когда-либо находили повышенную глюкозу</label>
+                    <select id="glucose-hx">
+                      <option value="no">Нет</option>
+                      <option value="yes">Да</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label for="htn-meds">Лекарства от давления</label>
+                    <select id="htn-meds">
+                      <option value="no">Нет</option>
+                      <option value="yes">Да</option>
+                    </select>
+                  </div>
+                  <div class="field field-full">
+                    <label for="family">Диабет 2 типа у родственников</label>
+                    <select id="family">
+                      <option value="none">Нет</option>
+                      <option value="second">Дедушка/бабушка, тётя/дядя, двоюродные</option>
+                      <option value="first">Родители, брат/сестра или ребёнок</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flags">
+                <label>
+                  <input id="flag-t1" type="checkbox" />
+                  Диагностирован диабет 1 типа
+                </label>
+                <label>
+                  <input id="flag-insulin-rx" type="checkbox" />
+                  Принимаю инсулин
+                </label>
+              </div>
+              <button class="button button-primary" type="submit">Посчитать</button>
+            </div>
+
+            <div class="result-box" id="calc-result" aria-live="polite">
+              <p class="result-placeholder">
+                Заполните поля и нажмите «Посчитать». Цифры остаются в браузере, никуда не отправляются.
+              </p>
+            </div>
+          </div>
+        </form>
+
+        <aside class="not-this">
+          <h3>Что это не значит</h3>
+          <ul>
+            <li>Не приговор и не «у вас болезнь».</li>
+            <li>Не план похудения и не цель по весу.</li>
+            <li>Не замена врачу: один индекс диагноз не ставит.</li>
+            <li>Не калькулятор дозы инсулина.</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="section" id="next" aria-labelledby="next-title">
+        <div class="section-index">02 / ЧТО ДАЛЬШЕ</div>
+        <p class="kicker">Без обещания похудеть</p>
+        <h2 id="next-title">Цифра посчитана. <em>Дальше — контекст.</em></h2>
+        <div class="next-grid">
+          <article>
+            <h3>Какие цифры обсудить с врачом</h3>
+            <p>
+              Глюкоза, инсулин, HbA1c, ОГТТ, липиды, талия — вместе, не по одному индексу.
+              <a href="index.html#diagnostics">Диагностика на главной ↗</a>
+            </p>
+          </article>
+          <article>
+            <h3>Мышцы забирают глюкозу</h3>
+            <p>
+              Сокращение открывает путь даже когда инсулин говорит тише.
+              <a href="muscle-glucose.html">Куда уходит глюкоза после еды ↗</a>
+            </p>
+          </article>
+          <article>
+            <h3>Не весь жир одинаков</h3>
+            <p>
+              Висцеральный жир и сигналы к печени.
+              <a href="adipose-insulin.html">Жировая ткань ↗</a>
+            </p>
+          </article>
+        </div>
+        <p>
+          Если тема женская: <a href="pcos-insulin.html">СПКЯ и инсулин ↗</a>
+        </p>
+      </section>
+
+      <section class="section" aria-labelledby="dpp-title">
+        <div class="dpp">
+          <strong>−58%</strong>
+          <div>
+            <p class="kicker">Diabetes Prevention Program</p>
+            <h2 id="dpp-title">Траектория риска, не идеальный вес</h2>
+            <p>
+              У людей с высоким риском программа образа жизни снизила новые случаи диабета на 58% за 2,8 года.
+              Это про устойчивые привычки, не про охоту за цифрой на весах.
+            </p>
+            <p>
+              <a href="https://pubmed.ncbi.nlm.nih.gov/11832527/" target="_blank" rel="noopener noreferrer">
+                Источник: DPP, NEJM ↗
+              </a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section cta" aria-labelledby="cta-title">
+        <p class="kicker">Дальше — в канале</p>
+        <h2 id="cta-title">Чек-лист анализов и спокойные разборы</h2>
+        <p class="disclaimer">Telegram ещё не запущен. Кнопка появится, когда будет ссылка — URL не выдумываем.</p>
+        <!-- TODO: подставить URL канала -->
+        <a class="button button-primary" href="#" aria-disabled="true">Telegram — скоро</a>
+      </section>
+
+      <section class="sources" id="sources" aria-labelledby="sources-title">
+        <div class="sources-heading">
+          <p class="sources-kicker">проверить самим</p>
+          <h2 id="sources-title">Источники</h2>
+          <p>Подборка обновлена 23 сентября 2026 года.</p>
+        </div>
+        <ol>
+          <li>
+            <a href="https://doi.org/10.1007/BF00280883" target="_blank" rel="noopener noreferrer">
+              Matthews D.R. et al. Homeostasis model assessment: insulin resistance and β-cell function. Diabetologia. 1985.
+            </a>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1089/met.2008.0034" target="_blank" rel="noopener noreferrer">
+              Guerrero-Romero F., Simental-Mendía L.E. et al. The product of triglycerides and glucose. 2008 / TyG.
+            </a>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1530/EJE-17-0883" target="_blank" rel="noopener noreferrer">
+              Bello-Chavolla O.Y. et al. METS-IR, a novel score to evaluate insulin sensitivity. Eur J Endocrinol. 2018.
+            </a>
+          </li>
+          <li>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/12610003/" target="_blank" rel="noopener noreferrer">
+              Lindström J., Tuomilehto J. The diabetes risk score: FINDRISC. Diabetes Care. 2003.
+            </a>
+          </li>
+          <li>
+            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12690183/" target="_blank" rel="noopener noreferrer">
+              ADA. Diagnosis and Classification of Diabetes: Standards of Care in Diabetes—2026.
+            </a>
+          </li>
+          <li>
+            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9542105/" target="_blank" rel="noopener noreferrer">
+              Gastaldelli A. Measuring and estimating insulin resistance in clinical and research settings. 2022.
+            </a>
+          </li>
+          <li>
+            <a href="https://helix.ru/kb/item/02-059" target="_blank" rel="noopener noreferrer">
+              Хеликс. Пример лабораторного ориентира HOMA-IR (не закон и не международный cut-off).
+            </a>
+          </li>
+          <li>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/11832527/" target="_blank" rel="noopener noreferrer">
+              Diabetes Prevention Program Research Group. Reduction in the incidence of type 2 diabetes. 2002.
+            </a>
+          </li>
+        </ol>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand brand-footer" href="index.html" aria-label="Сахароведение — на главную">
+        <span class="brand-mark" aria-hidden="true">С</span>
+        <span><strong>Сахароведение</strong><small>кафедра обмена веществ</small></span>
+      </a>
+      <p>Наука без сенсаций.<br />Здоровье без стыда.</p>
+      <small>
+        © <span id="year">2026</span> Сахароведение · Образовательный материал, не замена консультации врача
+      </small>
+    </footer>
+  </body>
+</html>

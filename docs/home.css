@@ -431,7 +431,29 @@ h2 em {
   border-top: 1px solid var(--ink);
   border-bottom: 1px solid var(--ink);
   background: var(--acid);
+  font: 700 12px/1 var(--display);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   white-space: nowrap;
+}
+
+.calc-invite {
+  display: grid;
+  gap: 12px;
+  justify-items: start;
+  padding: clamp(36px, 5vw, 56px) clamp(24px, 6vw, 94px);
+  border-bottom: 1px solid var(--ink);
+  background: var(--paper-deep);
+}
+
+.calc-invite h2 {
+  max-width: 18ch;
+}
+
+.calc-invite p {
+  max-width: 640px;
+  margin-bottom: 8px;
+  color: var(--muted);
 }
 
 .ticker div {
