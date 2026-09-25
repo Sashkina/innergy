@@ -461,8 +461,7 @@ select {
 }
 
 .cta .button {
-  opacity: 0.72;
-  pointer-events: none;
+  pointer-events: auto;
 }
 
 .disclaimer {
