@@ -1073,6 +1073,14 @@ blockquote span {
   object-fit: cover;
 }
 
+.scheme-figure img {
+  aspect-ratio: auto;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  background: var(--paper-deep);
+}
+
 .movement-copy h2 {
   margin-bottom: 30px;
   font-size: clamp(39px, 4.3vw, 67px);
@@ -1565,6 +1573,11 @@ footer > small {
   .inositol-image img,
   .movement-image img {
     min-height: 380px;
+  }
+
+  .scheme-figure img {
+    min-height: 0;
+    height: auto;
   }
 
   .evidence-badge {
