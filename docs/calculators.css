@@ -420,8 +420,7 @@ select {
 }
 
 .next-grid,
-.dpp,
-.cta {
+.dpp {
   display: grid;
   gap: 16px;
 }
@@ -454,14 +453,6 @@ select {
 
 .dpp strong {
   font: 600 42px / 1 var(--display);
-}
-
-.cta {
-  justify-items: start;
-}
-
-.cta .button {
-  pointer-events: auto;
 }
 
 .disclaimer {
